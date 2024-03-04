@@ -1,11 +1,13 @@
 import React from "react";
 import { ChakraProvider, Box, VStack, Grid, theme, Text, Button, Image, Heading, Flex, Spacer, useColorModeValue } from "@chakra-ui/react";
+import Navigation from "../components/Navigation.jsx";
 import { FaUserNinja, FaFortAwesome, FaShieldAlt, FaPlusCircle } from "react-icons/fa";
 
 const Index = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
+        <Navigation />
         <Grid minH="100vh" p={3}>
           <VStack spacing={8}>
             <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxuYXJ1dG8lMjBzdHlsZSUyMGdhbWV8ZW58MHx8fHwxNzA5NTc4NDE1fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Naruto Style Game" mb={4} />
